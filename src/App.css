@@ -96,3 +96,12 @@ a:hover, .nav-link:hover {
   background-color: #00415c;
   color: white;
 }
+
+.main-content {
+  min-height: 100vh; /* hace que el footer se pegue al fondo */
+  display: flex;
+  flex-direction: column;
+}
+.min-vh-100 {
+  min-height: 100vh;
+}

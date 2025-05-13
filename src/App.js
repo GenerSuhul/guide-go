@@ -40,24 +40,24 @@ function AppLayout() {
 
   return (
     <div className="d-flex">
-      {/* Sidebar visible solo en escritorio */}
+      {/* Sidebar solo escritorio */}
       {isDesktop && (
         <DesktopSidebar collapsed={collapsed} setCollapsed={setCollapsed} />
       )}
 
-      {/* Contenido principal */}
+      {/* Contenido principal envuelto correctamente */}
       <div
-        className="main-content flex-grow-1 d-flex flex-column"
+        className="main-content d-flex flex-column min-vh-100 flex-grow-1"
         style={{
           marginLeft: isDesktop ? (collapsed ? "70px" : "220px") : "0px",
           transition: "margin-left 0.3s ease",
         }}
       >
-        {/* Topbar solo móvil */}
+        {/* Topbar móvil */}
         <MobileTopbar />
 
-        {/* CONTENIDO DE RUTAS */}
-        <div className="content flex-grow-1 pt-4 mb-5">
+        {/* Contenido dinámico (ocupa espacio) */}
+        <div className="content pt-4 flex-grow-1">
           <div className="container">
             <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
@@ -69,22 +69,13 @@ function AppLayout() {
             </Routes>
           </div>
         </div>
-
-        {/* Footer (escritorio) */}
-        {isDesktop && (
-          <footer className="footer mt-auto py-3 bg-light">
-            <div className="container text-center">
-              <span className="text-muted">2025 &copy; Guide-Go. Desarrollado con ❤️.</span>
-            </div>
-          </footer>
-        )}
-
-        {/* Navbar solo móvil */}
+        {/* Navbar móvil abajo */}
         <MobileNavbar />
       </div>
     </div>
   );
 }
+
 
 // COMPONENTE PRINCIPAL APP
 function App() {
