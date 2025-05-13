@@ -1,0 +1,90 @@
+.desktop-sidebar {
+  width: 220px;
+  background-color: #1e1e2f;
+  color: #002c42;
+  min-height: 100vh;
+  transition: width 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+}
+
+.desktop-sidebar.collapsed {
+  width: 70px;
+}
+
+.desktop-sidebar .nav-link {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.desktop-sidebar .nav-item.active {
+  background-color: #103b46;
+  border-radius: 4px;
+}
+
+/* Barra lateral para escritorio */
+.desktop-sidebar {
+  width: 220px;
+  background-color: #07303a; /* Nuevo color solicitado */
+  color: #002c42;
+  min-height: 100vh;
+  transition: width 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+}
+
+.desktop-sidebar.collapsed {
+  width: 70px;
+}
+
+.desktop-sidebar .nav-link {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.desktop-sidebar .nav-item.active {
+  background-color: #081e23;
+  border-radius: 4px;
+}
+.desktop-sidebar {
+  width: 220px;
+  background-color: #c1eaf4; /* ✅ nuevo color */
+  color: #002c42;
+  min-height: 100vh;
+  transition: width 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+}
+
+.desktop-sidebar.collapsed {
+  width: 70px;
+}
+
+.desktop-sidebar .nav-link {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #002c42;
+}
+
+.desktop-sidebar .nav-link:hover {
+  background-color: #1e383e;
+  color: #002c42;
+  border-radius: 4px;
+}
+
+.desktop-sidebar .nav-item.active {
+  background-color: #8fbeca;
+  border-radius: 4px;
+}

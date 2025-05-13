@@ -1,0 +1,11 @@
+.mobile-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  border-bottom: 1px solid #c1eaf4;
+}
+
+.mobile-navbar i {
+  font-size: 1.2rem;
+}
+

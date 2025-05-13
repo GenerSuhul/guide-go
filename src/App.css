@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #002c42 ;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: #f0f8ff;
+  color: #002c42;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-primary {
+  background-color: #009dca;
+  border-color: #009dca;
+}
+
+.btn-primary:hover {
+  background-color: #c1eaf4;
+  border-color: #c1eaf4;
+}
+
+a, .nav-link {
+  color: #002c42;
+}
+
+a:hover, .nav-link:hover {
+  color: #36869a;
+}
+
+.nav-icon-btn {
+  background-color: #002c42;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.nav-icon-btn:hover {
+  background-color: #00415c;
+  color: white;
+}
