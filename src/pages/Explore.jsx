@@ -1,7 +1,32 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const guides = [
+
+  const guides = [
+  {
+    id: 4,
+    name: "Vielman Estuardo Barahona Alejandro",
+    photo: `${process.env.PUBLIC_URL}/assets/img/guia4.png`,
+    languages: ["Español", "Inglés"],
+    rating: 4.6,
+    experience: "1 año",
+  },
+  {
+    id: 5,
+    name: "Cristian Geciel Ordóñez Arévalo",
+    photo: `${process.env.PUBLIC_URL}/assets/img/guia5.png`,
+    languages: ["Español", "Inglés"],
+    rating: 4.8,
+    experience: "2 años",
+  },
+  {
+    id: 6,
+    name: "Diana Noemí Flores del Cid",
+    photo: `${process.env.PUBLIC_URL}/assets/img/guia6.png`,
+    languages: ["Español", "Inglés"],
+    rating: 4.7,
+    experience: "1 año",
+  },
   {
     id: 1,
     name: "Carlos Hernández",
@@ -71,7 +96,7 @@ function Explore() {
                     <div className="avatar avatar-xl">
                       <img
                         src={guide.photo}
-                        alt="Avatar"
+                        alt={guide.name}
                         className="avatar-img rounded-circle"
                       />
                     </div>

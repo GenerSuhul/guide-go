@@ -3,6 +3,33 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const guides = [
   {
+    id: 4,
+    name: "Vielman Estuardo Barahona Alejandro",
+    photo: `${process.env.PUBLIC_URL}/assets/img/guia4.png`,
+    languages: ["Español", "Inglés"],
+    rating: 4.6,
+    experience: "1 año",
+    bio: "Especialista en biología, ornitología, arqueología e historia. Guía joven y entusiasta con gran pasión por la naturaleza.",
+  },
+  {
+    id: 5,
+    name: "Cristian Geciel Ordóñez Arévalo",
+    photo: `${process.env.PUBLIC_URL}/assets/img/guia5.png`,
+    languages: ["Español", "Inglés"],
+    rating: 4.8,
+    experience: "2 años",
+    bio: "Apasionado por la historia, cultura, arqueología y sociología. Experto en recorridos culturales por Petén.",
+  },
+  {
+    id: 6,
+    name: "Diana Noemí Flores del Cid",
+    photo: `${process.env.PUBLIC_URL}/assets/img/guia6.png`,
+    languages: ["Español", "Inglés"],
+    rating: 4.7,
+    experience: "1 año",
+    bio: "Guía especializada en cultura e historia petenera. Con energía, empatía y dedicación a cada visitante.",
+  },
+  {
     id: 1,
     name: "Carlos Hernández",
     photo: `${process.env.PUBLIC_URL}/assets/img/profile.jpg`,
@@ -37,14 +64,14 @@ function GuideProfile() {
   const guide = guides.find((g) => g.id === parseInt(id));
 
   if (!guide) {
-    return <h3>Guía no encontrado</h3>;
+    return <h3 className="text-center mt-5 text-danger">Guía no encontrado</h3>;
   }
 
   return (
     <div className="container">
       <div className="card mt-4 shadow">
         <div className="card-body d-flex flex-column flex-md-row align-items-center">
-          <div className="me-md-4 mb-3 mb-md-0">
+          <div className="me-md-4 mb-3 mb-md-0 text-center">
             <img
               src={guide.photo}
               alt="guía"
@@ -55,11 +82,9 @@ function GuideProfile() {
           </div>
           <div className="flex-grow-1">
             <h3 className="fw-bold">{guide.name}</h3>
-            <p className="mb-1">Idiomas: {guide.languages.join(", ")}</p>
-            <p className="mb-1">Experiencia: {guide.experience}</p>
-            <p className="text-warning fw-bold mb-2">
-              ⭐ {guide.rating} / 5
-            </p>
+            <p className="mb-1"><strong>Idiomas:</strong> {guide.languages.join(", ")}</p>
+            <p className="mb-1"><strong>Experiencia:</strong> {guide.experience}</p>
+            <p className="text-warning fw-bold mb-2">⭐ {guide.rating} / 5</p>
             <p className="mb-3">{guide.bio}</p>
             <div>
               <button
