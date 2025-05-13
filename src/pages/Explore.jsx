@@ -92,7 +92,6 @@ function Explore() {
                   >
                     Ver perfil
                   </button>
-                  <button className="btn btn-sm btn-outline-info">Reservar</button>
                 </div>
               </div>
             </div>

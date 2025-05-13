@@ -62,7 +62,6 @@ function GuideProfile() {
             </p>
             <p className="mb-3">{guide.bio}</p>
             <div>
-              <button className="btn btn-outline-primary me-2">Contactar</button>
               <button
                 className="btn btn-primary"
                 onClick={() => navigate("/booking", { state: { guideName: guide.name } })}
